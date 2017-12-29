@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Blockchain Essentials</title>
+  </head>
+  <body>
+    <h1 id="response">No Response!!</h1>
+    <p>
+      <button onclick="contactServer()">Contact Web Server</button>
+    </p>
+
+
+    <script type="text/javascript">
+
+      // ** function defined in the button element ****
+      function contactServer() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        var accounts = JSON.parse(this.responseText); //parse json to string
+       document.getElementById("response").innerHTML = accounts[0];
+      }
+    };
+    xhttp.open("GET", "ajax-request", true); //configure the ajax-request route in app.js **
+    xhttp.send();
+    }
+
+    </script>
+  </body>
+</html>
