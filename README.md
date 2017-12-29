@@ -3,8 +3,10 @@
 
 
 ## References:
+### Many Thanks for the insightful tutorial and the references.
+* [@vladwulf](https://github.com/vladwulf)
+* [https://steemit.com/@vladwulf](https://steemit.com/@vladwulf)
 
-[@vladwulf](https://github.com/vladwulf)
 
 ## License
-## MIT
+### MIT
